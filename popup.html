@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+.bold{ font-weight: bold; }
+
+.timeEnabled a div { width:275px !important; }
+
+.contentDiv {
+	width: 400px;
+	line-height: 95%;
+	text-align: left;
+	overflow-x:hidden;overflow-y:auto;
+	max-height:570px;
+}
+.table {
+	width: 390px;
+}
+img{vertical-align:top;margin: 1px 5px 0 0;}
+
+.contentDiv a { 
+	display:block;
+	color:#404352; 
+	border:1px solid #F7F8FF;
+	text-decoration:none;
+	margin:2px;
+	padding:2px;
+	background:#F6F7FF;
+	cursor: pointer;
+	border-radius:4px;
+	background: -webkit-gradient(linear, left top, left bottom,color-stop(0.0, #F7F8FF),color-stop(1.0, #FFF));
+}
+
+.contentDiv a:hover { 
+	background:#FFF;
+    -webkit-box-shadow: 0 0px 3px rgba(0,80,128,0.5);
+}
+
+.contentDiv a div{ 
+	display:inline-block;
+	width:94%;
+	min-height:11px;
+	margin: 3px 0 3px 0;
+	overflow:hidden;
+    line-height:120%;
+}
+a,a:hover,a:visited{text-decoration:none; color:#404352;}
+
+.maxh1{margin: -2px 0 0 0 !important; max-height:20px;line-height:200% !important;}
+.maxh2{max-height:25px;}
+.maxh3{max-height:36px;}
+.maxh4{max-height:49px;}
+.maxh5{max-height:62px;}
+.maxh6{max-height:75px;}
+
+.contentDiv a span{ 
+	display:inline-block;
+	overflow:hidden;
+	margin: 3px 0 0 10px;
+	height:12px;
+	padding:0;
+	vertical-align:top;
+}
+.contentDiv a span b{ 
+	display:inline;
+}
+.contentDiv a u{ 
+	color:#B37700;
+	text-shadow:0px 0px 3px #FF9100
+}
+
+center{
+	padding:5px;
+	margin:5px;
+	border:1px solid #ffb700;
+	border-radius:4px;
+	display:block;
+}
+
+input{
+	border:1px solid #E5ECFF;
+	border-radius:2px;
+	margin-left: 5px;
+	background:url(search.png) top left no-repeat;
+	padding:0 0 0 20px;
+	width:90%;
+}
+
+button {
+	color:#6791DA;
+	background:#FFF;
+	border:1px solid #E5ECFF;
+	padding:0px 10px 0px 10px;
+	text-align:center;
+	position:relative;
+	vertical-align:baseline;
+	text-decoration:none !important;
+	cursor: pointer;
+	border-radius:4px;
+
+}
+button:hover{
+	color: #000 !important;
+	background:#FFF;
+	border:1px solid #FFF;
+    -webkit-box-shadow: 0 0px 3px rgba(0,80,128,0.5);
+}
+
+html {
+	width: 400px; 
+}
+
+body {
+	width: 400px;
+	margin: 0;
+	font: 10px "Lucida Grande", verdana, sans-serif;
+	-moz-user-select: none;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+	height: 10px;
+	background-color: #FFF;
+}
+::-webkit-scrollbar-track-piece  {
+	background-color: #CACFDE;
+	-webkit-border-radius: 6px;
+}
+:-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+	height: 30px;
+	display: block;
+	background-color: #FAA;
+}
+::-webkit-scrollbar-thumb:vertical {
+	height: 50px;
+	background: -webkit-gradient(linear, right top, left top,color-stop(0.0, #F7F8FF),color-stop(1.0, #FFF));
+	border: 1px solid #CACFDE;
+	-webkit-border-radius: 6px;
+}
+</style>
+<script src="popup.js"> </script>
+<script src="init.js"> </script>
+
+</head>
+<body>
+  <div id="content" class="contentDiv"> </div>
+  <table class="table" cellspacing="0" cellpadding="0" border="0" frame="void">
+    <tr>
+	  <td>
+        <input type="text" id="searchQ" />
+      </td>
+	  <td width="80px">
+		<button id="buttonShowAll">Show all</button>
+	  </td>
+    </tr>
+  </table>
+  <div id="content2" class="contentDiv"> </div>
+</body>
+</html>
